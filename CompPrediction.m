@@ -5,7 +5,6 @@
 function [PredLabel,BlockN] = CompPrediction(Gamma_best,Theta_best)
     %%% the number of blocks %%%
     Z = CompZ(Gamma_best);
-%     PredA = CompP(Theta_best,Z); % for link prediction
     BlockN = size(Z,2);          % the number of blocks
     %%% the lable of nodes %%%
     PredLabel = zeros(length(Z),1);
