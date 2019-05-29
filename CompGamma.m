@@ -15,7 +15,7 @@ function Gamma_m = CompGamma( m,GammaU, Exponent, Omega )
            SumOU = SumOU + Omega(j)*GammaU(i,j);
        end
 
-       for j = i_min %j=1:K  ???             
+       for j = i_min             
            SumOU = SumOU + Omega(j)*GammaU(i,j);
        end
        if Exponent(i,m) == min(Exponent(i,:)) || Exponent(i,m) == min(Exponent(i,:))+1
