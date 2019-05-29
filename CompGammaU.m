@@ -28,9 +28,7 @@ for indtA = 1 : LengthofA
         GammaU(i) = GammaU(i)*10^40;
         Exponent(i) = Exponent(i) + 1; % accumulating the exponent
     end
-%     if Exponent(i) == 100
-%         break;
-%     end 
+
 end
 end
 
