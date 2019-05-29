@@ -66,7 +66,7 @@ while stop
         Opt.Gamma = Gamma;
         Opt.Cost = Cost1;
     end
- %   if abs(Cost0 - Cost1) < Diff_min*(Cost0) % judgement of convergence
+ 
     if Cost0 - Cost1 < Diff_min || K_g<K_min% judgement of convergence
         stop = false; 
     end 
